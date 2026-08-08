@@ -1,0 +1,27 @@
+{
+  "name": "namaste-backend",
+  "version": "1.0.0",
+  "description": "A backend learning repository built with Node.js and Express, designed to teach core server‑side concepts step by step.",
+  "keywords": [
+    "javascript",
+    "backend"
+  ],
+  "homepage": "https://github.com/Mask-00007/Namaste-Backend#readme",
+  "bugs": {
+    "url": "https://github.com/Mask-00007/Namaste-Backend/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mask-00007/Namaste-Backend.git"
+  },
+  "license": "ISC",
+  "author": "Shubham Raj",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
