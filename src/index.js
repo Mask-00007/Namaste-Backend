@@ -10,7 +10,18 @@ dotenv.config({
   path: "./env",
 });
 
-connectDB();
+connectDB()
+  //* Whenever a DB gets connected, it always returns a promise..
+  .then(() => {
+    // App is only connected with DB only, now we have to listen such that it will connect to the server
+    app.listen(process.env.PORT || 8000, () => {
+      console.log(`Server is running at port ${process.env.PORT}`);
+    });
+    // console.log(res);
+  })
+  .catch((error) => {
+    console.log(error);
+  });
 
 //* First approcah to connect database with server
 /* import express from "express";
